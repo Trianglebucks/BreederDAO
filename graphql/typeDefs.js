@@ -7,6 +7,60 @@ export default gql`
     stage: Int
   }
 
+  type Beast {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Aquatic {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Plant {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Bird {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Bug {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Reptile {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Mech {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Dawn {
+    name: String
+    class: String
+    stage: Int
+  }
+
+  type Dusk {
+    name: String
+    class: String
+    stage: Int
+  }
+
   input AxieInput {
     name: String
     class: String
@@ -18,8 +72,16 @@ export default gql`
   }
 
   type Query {
-    axie(ID: ID!): Axie!
     getAxies: [Axie]
+    beasts: [Beast]
+    aquatics: [Aquatic]
+    plants: [Plant]
+    birds: [Bird]
+    bugs: [Bug]
+    reptiles: [Reptile]
+    mechs: [Mech]
+    dawns: [Dawn]
+    dusks: [Dusk]
   }
 
   type Mutation {

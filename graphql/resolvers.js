@@ -40,6 +40,114 @@ export default {
         console.log(error);
       }
     },
+    async beasts() {
+      try {
+        const beasts = await Beast.find().exec();
+        return beasts;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async aquatics() {
+      try {
+        const aquatics = await Aquatic.find().exec();
+        return aquatics;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async plants() {
+      try {
+        const plants = await Plant.find().exec();
+        return plants;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async birds() {
+      try {
+        const birds = await Bird.find().exec();
+        return birds;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async bugs() {
+      try {
+        const bugs = await Bug.find().exec();
+        return bugs;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async reptiles() {
+      try {
+        const reptiles = await Reptile.find().exec();
+        return reptiles;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async mechs() {
+      try {
+        const mechs = await Mech.find().exec();
+        return mechs;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async dawns() {
+      try {
+        const dawns = await Dawn.find().exec();
+        return dawns;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
+    async dusks() {
+      try {
+        const dusks = await Dusk.find().exec();
+        return dusks;
+      } catch (error) {
+        console.error(
+          'Error fetching data from "beast_class" collection:',
+          error
+        );
+        throw new Error('Failed to fetch data from "beast_class" collection');
+      }
+    },
   },
   Mutation: {
     async fetchAxiesAPI() {
