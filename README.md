@@ -14,5 +14,9 @@ npm start
 ```
 http://localhost:5200/
 ```
-or you can 
+or you can edit the port found in server.js
+
+4. Run the mutation to fetch 300 Axies (sorted by price ascending) from the Axie Infinity GraphQL API
+![image](https://github.com/Trianglebucks/BreederDAO/assets/65164451/aaaad419-e4ae-4084-9481-8c4f9cb97ecb)
+
 
