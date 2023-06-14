@@ -24,5 +24,8 @@ http://localhost:5200/
 5. To fetch the data from mongoDB, you can define the query with the specific class. In this instance, I fetched the beast class
 ![image](https://github.com/Trianglebucks/BreederDAO/assets/65164451/8942a486-839a-410a-bac9-fb2c3737bfdd)
 
+6. Run the marketplaceManager in the query in which fetches the data from the axie infinity contract.
+![image](https://github.com/Trianglebucks/BreederDAO/assets/65164451/b0a47e08-eca2-48eb-b87e-b84bb9a5265a)
+
 
 
