@@ -10,7 +10,6 @@ export default gql`
 
   type Beast {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -18,7 +17,6 @@ export default gql`
 
   type Aquatic {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -26,7 +24,6 @@ export default gql`
 
   type Plant {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -34,7 +31,6 @@ export default gql`
 
   type Bird {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -42,7 +38,6 @@ export default gql`
 
   type Bug {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -50,7 +45,6 @@ export default gql`
 
   type Reptile {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -58,7 +52,6 @@ export default gql`
 
   type Mech {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -66,7 +59,6 @@ export default gql`
 
   type Dawn {
     id: String
-
     name: String
     class: String
     stage: Int
@@ -74,7 +66,6 @@ export default gql`
 
   type Dusk {
     id: String
-
     name: String
     class: String
     stage: Int
