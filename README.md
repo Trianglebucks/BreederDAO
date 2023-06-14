@@ -24,6 +24,9 @@ http://localhost:5200/
    or you can edit the port found in server.js
 ![image](https://github.com/Trianglebucks/BreederDAO/assets/65164451/54df35d2-031e-4b22-b6a4-19f69efefa05)
 
+Do note that you can change the mongoDB database and use your own.
+![image](https://github.com/Trianglebucks/BreederDAO/assets/65164451/406e7f88-aeef-42ab-b1a2-b633d405d194)
+
 Once there in the apollo server sandbox:
 1. Run the mutation to fetch 300 Axies (sorted by price ascending) from the Axie Infinity GraphQL API
 ![image](https://github.com/Trianglebucks/BreederDAO/assets/65164451/300ba7ef-a488-4a72-a617-737db7967ec0)
