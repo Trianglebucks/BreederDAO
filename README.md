@@ -2,7 +2,7 @@
 
 1. First install the dependencies
  ```
-npm install apollo-server axios express graphql mongodb mongoose web3
+npm install
 ```
 
 2. To start the app, run
