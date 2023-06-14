@@ -8,6 +8,8 @@ import Mech from "../models/Mech.js";
 import Dawn from "../models/Dawn.js";
 import Dusk from "../models/Dusk.js";
 import axios from "axios";
+import web3 from "../web3/web3.js";
+import { abi, contractAddress } from "../web3/axieConfig.js";
 const API_URL = "https://graphql-gateway.axieinfinity.com/graphql";
 
 export default {
@@ -38,6 +40,48 @@ export default {
         return axies;
       } catch (error) {
         console.log(error);
+      }
+    },
+    async totalSupply() {
+      try {
+        // Create a contract instance using the contract ABI and address
+        const contract = new web3.eth.Contract(abi, contractAddress);
+
+        // Call the desired function from the contract
+        const result = await contract.methods.totalSupply().call();
+
+        return result;
+      } catch (error) {
+        console.error("Error calling Axie Infinity function:", error);
+        throw new Error("Failed to call Axie Infinity function");
+      }
+    },
+    async marketplaceManager() {
+      try {
+        // Create a contract instance using the contract ABI and address
+        const contract = new web3.eth.Contract(abi, contractAddress);
+
+        // Call the desired function from the contract
+        const result = await contract.methods.marketplaceManager().call();
+
+        return result;
+      } catch (error) {
+        console.error("Error calling Axie Infinity function:", error);
+        throw new Error("Failed to call Axie Infinity function");
+      }
+    },
+    async getName() {
+      try {
+        // Create a contract instance using the contract ABI and address
+        const contract = new web3.eth.Contract(abi, contractAddress);
+
+        // Call the desired function from the contract
+        const result = await contract.methods.name().call();
+
+        return result;
+      } catch (error) {
+        console.error("Error calling Axie Infinity function:", error);
+        throw new Error("Failed to call Axie Infinity function");
       }
     },
     async beasts() {

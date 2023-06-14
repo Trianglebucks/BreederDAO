@@ -72,6 +72,7 @@ export default gql`
   }
 
   type Query {
+    totalSupply: Int
     getAxies: [Axie]
     beasts: [Beast]
     aquatics: [Aquatic]
@@ -82,6 +83,8 @@ export default gql`
     mechs: [Mech]
     dawns: [Dawn]
     dusks: [Dusk]
+    marketplaceManager: String
+    getName: String
   }
 
   type Mutation {
