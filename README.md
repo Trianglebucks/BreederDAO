@@ -1,5 +1,12 @@
 # BreederDAO
 
+access the app here
+ ```
+https://axie-api-breederdao.onrender.com/
+ ```
+ 
+or do it locally:
+
 1. First install the dependencies
  ```
 npm install
