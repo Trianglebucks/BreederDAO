@@ -14,48 +14,6 @@ const API_URL = "https://graphql-gateway.axieinfinity.com/graphql";
 
 export default {
   Query: {
-    async getAxies() {
-      try {
-        const data = await axios.post(
-          API_URL,
-          {
-            operationName: "GetAxieLatest",
-            variables: {
-              from: 0,
-              size: 10,
-              sort: "PriceAsc",
-              auctionType: "Sale",
-              criteria: {},
-            },
-            query:
-              "query GetAxieLatest($auctionType: AuctionType, $criteria: AxieSearchCriteria, $from: Int, $sort: SortBy, $size: Int, $owner: String) {\n  axies(auctionType: $auctionType, criteria: $criteria, from: $from, sort: $sort, size: $size, owner: $owner) {\n    results {\n      ...AxieRowData\n      __typename\n    }\n   }\n}\n\nfragment AxieRowData on Axie {\n  id\n  class\n  name\n  class\n  stage\n}\n\n",
-          },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        let axies = data?.data?.data?.axies?.results;
-        return axies;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-    async totalSupply() {
-      try {
-        // Create a contract instance using the contract ABI and address
-        const contract = new web3.eth.Contract(abi, contractAddress);
-
-        // Call the desired function from the contract
-        const result = await contract.methods.totalSupply().call();
-
-        return result;
-      } catch (error) {
-        console.error("Error calling Axie Infinity function:", error);
-        throw new Error("Failed to call Axie Infinity function");
-      }
-    },
     async marketplaceManager() {
       try {
         // Create a contract instance using the contract ABI and address

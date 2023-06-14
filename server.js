@@ -1,7 +1,5 @@
-import express from "express";
-const app = express();
 import connectDB from "./db/connect.js";
-import axios from "axios";
+
 import { ApolloServer } from "apollo-server";
 import typeDefs from "./graphql/typeDefs.js";
 import resolvers from "./graphql/resolvers.js";

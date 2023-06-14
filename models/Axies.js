@@ -3,6 +3,8 @@ import { Schema, model } from "mongoose";
 const AxiesSchema = new Schema({
   axies: [
     {
+      id: String,
+
       name: String,
       class: String,
       stage: Number,

@@ -1,6 +1,8 @@
 import { Schema, model } from "mongoose";
 
 const DuskSchema = new Schema({
+  id: String,
+
   name: String,
   class: String,
   stage: Number,

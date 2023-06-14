@@ -2,78 +2,85 @@ import { gql } from "apollo-server";
 
 export default gql`
   type Axie {
+    id: String
     name: String
     class: String
     stage: Int
   }
 
   type Beast {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Aquatic {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Plant {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Bird {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Bug {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Reptile {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Mech {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Dawn {
+    id: String
+
     name: String
     class: String
     stage: Int
   }
 
   type Dusk {
+    id: String
+
     name: String
     class: String
     stage: Int
-  }
-
-  input AxieInput {
-    name: String
-    class: String
-    stage: Int
-  }
-
-  type AxieResult {
-    axies: [Axie]
   }
 
   type Query {
-    totalSupply: Int
-    getAxies: [Axie]
     beasts: [Beast]
     aquatics: [Aquatic]
     plants: [Plant]
@@ -89,6 +96,5 @@ export default gql`
 
   type Mutation {
     fetchAxiesAPI: [Axie]!
-    storeAxies: AxieResult!
   }
 `;
